@@ -1,0 +1,154 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.banner {
+    background-color: #3a4d8f;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    background-color: #d1e7ff;
+}
+
+.btn-primary {
+    background-color: #3a4d8f;
+    border-color: #3a4d8f;
+}
+
+    .btn-primary:hover {
+        background-color: #2d3e74;
+        border-color: #2d3e74;
+    }
+
+#qr-preview {
+    width: 320px;
+    height: 240px;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    position: relative;
+    background-color: #f0f0f0;
+}
+
+video {
+    width: 320px;
+    height: 240px;
+    margin: 0 auto;
+}
+
+.qr-container {
+    position: relative;
+    margin: 0 auto;
+    width: 320px;
+}
+
+#path-canvas {
+    border: 1px solid #dee2e6;
+    background-color: #f8f9fa;
+    width: 100%;
+    height: 300px;
+    margin-top: 1rem;
+    display: block;
+}
+
+#route-steps {
+    min-height: 100px;
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    background-color: #fff;
+}
+
+#route-steps .list-group-item {
+    border: 1px solid #dee2e6;
+    margin-bottom: 2px;
+    transition: all 0.3s ease;
+    padding: 0.75rem 1rem;
+}
+
+#route-steps .step-number {
+    font-weight: 500;
+}
+
+#route-steps .badge {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.navigation-controls {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.navigation-controls {
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.navigation-controls .btn {
+    min-width: 120px;
+    padding: 0.5rem 1rem;
+}
+
+#navigation-status {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+
+.btn {
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#btn-start-voice {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recording {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7);
+    }
+
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(220, 53, 69, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(220, 53, 69, 0);
+    }
+}
+
+
